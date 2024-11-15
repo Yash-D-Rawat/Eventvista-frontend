@@ -15,7 +15,7 @@ import Viewprofile from "./pages/Single_evn/Viewprofile";
 import AboutPage from "./pages/Aboutpage";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false)
   const [type, settype] = useState('all');
   const [city, setcity] = useState('all');
 
