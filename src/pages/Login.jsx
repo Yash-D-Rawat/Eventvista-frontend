@@ -245,7 +245,7 @@ const Login = () => {
                       </div>
                     )}
 
-                    <button type="submit">{isRegistering ? 'Register' : 'Login'}</button>
+                    <button type="submit" id='register'>{isRegistering ? 'Register' : 'Login'}</button>
                   </form>
                 </div>
 

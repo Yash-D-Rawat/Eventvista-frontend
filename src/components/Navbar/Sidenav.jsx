@@ -88,9 +88,12 @@ export default function Sidenav({ handleLogout }) {
                 {items2.map((item, index) => (
                     <Link to={item.link}>
                         <ListItem key={index} disablePadding>
-                            <ListItemButton>
+                            <ListItemButton
+                            onClick={item.page === 'Logout' ? handleLogout : null}
+                            className='hover:scale-105 hover:shadow-lg transition-transform duration-200 ease-in-out'
+                            >
                                 <ListItemIcon>
-                                    {item.page === 'Logout' ? <item.icon onClick={handleLogout} className='size-7' /> : <item.icon className='size-6' />}
+                                    <item.icon className='size-6' />
                                 </ListItemIcon>
                                 <ListItemText primary={item.page} />
                             </ListItemButton>
