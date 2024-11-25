@@ -35,18 +35,18 @@ function Newevents({ item }) {
     return (
         <div className='w-full p-5 bg-white rounded-xl flex flex-col gap-5 shadow-xl cursor-pointer hover:scale-105 transition-all duration-150 ease-in'>
             <div className='flex items-center gap-5'>
-                <img src={item.image} alt="" className='w-60 h-40 rounded-lg' />
+                <img src={item.image} alt="" className='w-30 h-20 md:w-60 md:h-40 rounded-lg' />
                 <div className='flex flex-col gap-2'>
                     <h1 className='text-3xl font-bold'>{item.title}</h1>
                     <p className='font-semibold'>{item.location}</p>
                 </div>
             </div>
 
-            <div className='flex justify-around'>
+            <div className='flex md:justify-around'>
                 <ul className='flex flex-col gap-2'>
                     <li className='flex items-center gap-2 font-semibold'><GoTrophy className='size-5' /> {item.organized_by}</li>
                     <li className='flex items-center gap-2 font-semibold'><IoLocationOutline className='size-5' />{item.venue}, {item.location}</li>
-                    <li className='flex items-center gap-2 font-semibold'><CiCalendar className='size-5' />Event On: {item.eventdate}</li>
+                    <li className='flex items-center gap-2 font-semibold'><CiCalendar className='size-5' />Event On: {dayjs(item.eventdate).format("YYYY-MM-DD")}</li>
                     <li className='flex items-center gap-2 mt-1 border-gray-600 border-[1px] w-fit rounded-3xl px-4 py-2'>{item.type}</li>
                     <span className='flex bg-[#FFEBA0] w-fit p-3 font-semibold rounded-md'>
                         <img src="/images/trophy.png" alt="" className='w-7 h-7' />
@@ -54,7 +54,7 @@ function Newevents({ item }) {
                     </span>
                 </ul>
 
-                <div className='ml-5 flex flex-col gap-3 items-center'>
+                <div className='hidden ml-5 md:flex flex-col gap-3 items-center'>
                     <p className='font-bold text-2xl'>Time Left</p>
                     <div className='flex space-x-2'>
                         <div className='bg-blue-100 text-blue-900 rounded-lg p-2 w-16 text-center'>

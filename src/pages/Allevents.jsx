@@ -30,11 +30,11 @@ function Allevents({ type, handletype, city, handlecity }) {
     };
   
     return (
-      <div className="w-full flex justify-center gap-2 bg-[#F6F6F6] p-4">
-        <div className="p-6 w-[35%]">
+      <div className="w-full flex-wrap md:flex justify-center gap-2 bg-[#F6F6F6] p-4">
+        <div className="p-6 md:w-[35%]">
           <Filterevn type={type} handletype={handletype} city={city} handlecity={handlecity} handleSearch={handleSearch} />
         </div>
-        <div className="w-[55%] h-screen flex flex-col gap-5 overflow-y-auto scroll-smooth no-scrollbar p-6">
+        <div className="md:w-[55%] h-screen flex flex-col gap-5 overflow-y-auto scroll-smooth no-scrollbar p-6">
           {allevents.map((item, index) => (
             <Link key={index} to={`/events/by_id/${item._id}`}><Newevents item={item} /></Link>
           ))}

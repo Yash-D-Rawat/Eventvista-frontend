@@ -130,6 +130,7 @@ const Login = () => {
                         id="email"
                         name="email"
                         onChange={handleChange}
+                        placeholder='Enter your Email'
                         value={userInfo.email}
                         required
                       />
@@ -140,6 +141,7 @@ const Login = () => {
                         type="password"
                         id="password"
                         name="password"
+                        placeholder='Create a Password'
                         onChange={handleChange}
                         value={userInfo.password}
                         required
@@ -154,6 +156,7 @@ const Login = () => {
                             type="text"
                             id="fullName"
                             name="fullName"
+                            placeholder='Full Name'
                             onChange={handleChange}
                             value={userInfo.fullName}
                             required
@@ -165,6 +168,7 @@ const Login = () => {
                             type="text"
                             id="username"
                             name="username"
+                            placeholder='Username'
                             onChange={handleChange}
                             value={userInfo.username}
                             required
@@ -176,6 +180,7 @@ const Login = () => {
                             type="tel"
                             id="phone"
                             name="phone"
+                            placeholder='Phone Number'
                             onChange={handleChange}
                             value={userInfo.phone}
                             pattern="[0-9]{10}"
@@ -189,6 +194,7 @@ const Login = () => {
                             type="date"
                             id="dateOfBirth"
                             name="dateOfBirth"
+                            placeholder='Date of Birth'
                             onChange={handleChange}
                             value={userInfo.dateOfBirth}
                             max={new Date().toISOString().split('T')[0]}
@@ -201,6 +207,7 @@ const Login = () => {
                             type="number"
                             id="age"
                             name="age"
+                            placeholder='Age'
                             onChange={handleChange}
                             value={userInfo.age}
                             min="16"
@@ -217,7 +224,7 @@ const Login = () => {
                             value={userInfo.gender}
                             required
                           >
-                            <option value="">Select Gender</option>
+                            <option value="Gender">Select Gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                             <option value="other">Other</option>
@@ -229,6 +236,7 @@ const Login = () => {
                             type="text"
                             id="collegeName"
                             name="collegeName"
+                            placeholder='College'
                             onChange={handleChange}
                             value={userInfo.collegeName}
                             required

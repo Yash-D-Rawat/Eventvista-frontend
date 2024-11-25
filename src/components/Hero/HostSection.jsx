@@ -29,9 +29,9 @@ const HostSection = () => {
             <button className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold shadow-md hover:bg-blue-700 transition">
               <Link to='/host'>Host Now</Link>
             </button>
-            <button className="px-6 py-3 bg-transparent text-gray-600 font-semibold rounded-lg border border-gray-300 hover:bg-gray-100 transition">
+            {/* <button className="px-6 py-3 bg-transparent text-gray-600 font-semibold rounded-lg border border-gray-300 hover:bg-gray-100 transition">
               Know More
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="flex justify-end items-center w-1/2">
