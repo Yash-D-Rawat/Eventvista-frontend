@@ -16,8 +16,8 @@ import AboutPage from "./pages/Aboutpage";
 
 function App() {
   const [loading, setLoading] = useState(false)
-  const [type, settype] = useState('all');
-  const [city, setcity] = useState('all');
+  const [type, settype] = useState('All');
+  const [city, setcity] = useState('All');
 
   function handlecity(selectedcity) {
     setLoading(true); // Start loading

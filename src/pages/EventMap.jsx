@@ -22,7 +22,7 @@ function EventMap() {
     const [events, setEvents] = useState([]);
     const [allevents, setallevents] = useState([]);
     useEffect(() => {
-        axios.get(`${eventsbytypeApi}/all/all`).then((res) => {
+        axios.get(`${eventsbytypeApi}/${'All'}/${'All'}`).then((res) => {
             setallevents(res.data.events);
         
         }).catch((err) => {

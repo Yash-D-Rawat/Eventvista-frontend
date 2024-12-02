@@ -38,7 +38,6 @@ function Home() {
   return (
     <>
       <Hero />
-      
       <UpcomingEvn />
       <HostSection/>
       <Footer/>

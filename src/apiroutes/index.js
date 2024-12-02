@@ -1,6 +1,6 @@
-export const host = "https://eventvista-backend.onrender.com"
+// export const host = "https://eventvista-backend.onrender.com"
 
-// export const host = "http://localhost:5000"
+export const host = "http://localhost:5000"
 
 export const fetchuserprofileApi = `${host}/home/profile`;
 

@@ -7,9 +7,9 @@ function Filterevn({ type, handletype, handlecity, handleSearch }) {
     <div className='bg-white h-fit w-full rounded-xl p-5 shadow-xl'>
       <p className='text-lg font-semibold mb-4'>Filter by:</p>
       <div className='grid grid-cols-2 gap-2'>
-        <button className={`py-2 px-4 rounded-3xl ${type === 'all' ? 'bg-gray-400' : 'bg-[#009086]'} text-white hover:bg-gray-400`} onClick={() => { handletype('all') }}>All Events</button>
+        <button className={`py-2 px-4 rounded-3xl ${type === 'All' ? 'bg-gray-400' : 'bg-[#009086]'} text-white hover:bg-gray-400`} onClick={() => { handletype('All') }}>All Events</button>
         <button className={`py-2 px-4 rounded-3xl ${type === 'Hackathon' ? 'bg-gray-400' : 'bg-[#03045E]'} text-white font-semibold hover:bg-gray-400`} onClick={() => { handletype('Hackathon'); }}>Hackathon</button>
-        <button className={`py-2 px-4 rounded-3xl ${type === 'Competitive Programming' ? 'bg-gray-400' : 'bg-[#0077B6]'} text-white font-semibold hover:bg-gray-400`} onClick={() => { handletype('Competitive Programming') }}>  Coding</button>
+        <button className={`py-2 px-4 rounded-3xl ${type === 'Competitive Coding' ? 'bg-gray-400' : 'bg-[#0077B6]'} text-white font-semibold hover:bg-gray-400`} onClick={() => { handletype('Competitive Coding') }}>  Coding</button>
         <button className={`py-2 px-4 rounded-3xl ${type === 'Case Study' ? 'bg-gray-400' : 'bg-[#00B4D8]'} text-white font-semibold hover:bg-gray-400`} onClick={() => { handletype('Case Study') }}>Case Study</button>
         <button className={`py-2 px-4 rounded-3xl ${type === 'Cultural' ? 'bg-gray-400' : 'bg-[#4e3dce]'} text-white font-semibold hover:bg-gray-400`} onClick={() => { handletype('Cultural') }}>Cultural</button>
         <button className={`py-2 px-4 rounded-3xl ${type === 'Gaming' ? 'bg-gray-400' : 'bg-[#4361EE]'} text-white font-semibold hover:bg-gray-400`} onClick={() => { handletype('Gaming') }}>Gaming</button>

@@ -88,7 +88,7 @@ function Navbar() {
 
         {/* <ToastContainer /> */}
       </div>
-      <Sidenav handleLogout = {handleLogout}/>
+      <Sidenav handleLogout={handleLogout} />
     </>
   )
 }
